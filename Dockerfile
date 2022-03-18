@@ -1,6 +1,6 @@
 FROM alpine:3.15
 ENTRYPOINT ["/sbin/tini","--","/usr/local/searx/dockerfiles/docker-entrypoint.sh"]
-EXPOSE 8080
+EXPOSE 80
 VOLUME /etc/searx
 VOLUME /var/log/uwsgi
 
